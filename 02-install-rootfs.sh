@@ -18,7 +18,7 @@ errecho () {
 
 # Automatic Preflight Checks
 if [[ $EUID -ne 0 ]]; then
-    errecho "This script must be run as root!" 
+    errecho "This script must be run as root!"
     exit 1
 fi
 

@@ -20,7 +20,7 @@ errecho () {
 infecho "Now running selftest, please do not continue running scripts until this completes successfully."
 
 if [[ $EUID -ne 0 ]]; then
-    errecho "This script must be run as root!" 
+    errecho "This script must be run as root!"
     exit 1
 fi
 

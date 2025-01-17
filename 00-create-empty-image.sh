@@ -27,5 +27,4 @@ then
     # Create this as a sparse file
     echo "Creating sparse blank 6GB file called $OUT_NAME."
     dd if=/dev/zero of=$OUT_NAME bs=1 count=0 seek=6G && sync
-
 fi

@@ -14,7 +14,6 @@ For prebuilt images, see the [releases](https://github.com/nikhiljha/pp-fedora-s
 - btrfs-progs (for mkfs.btrfs)
 - dosfstools (for mkfs.vfat)
 - rsync
-- uboot-tools (for mkimage)
 - qemu-user-static (for qemu-aarch64-static)
 
 ## Usage

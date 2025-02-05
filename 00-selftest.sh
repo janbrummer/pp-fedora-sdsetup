@@ -34,6 +34,5 @@ if [[ $HOSTARCH != "aarch64" ]]; then
 fi
 
 command -v rsync >/dev/null 2>&1 || { echo >&2 "I require rsync but it's not installed.  Aborting."; exit 1; }
-command -v mkimage >/dev/null 2>&1 || { echo >&2 "I require mkimage but it's not installed.  Aborting."; exit 1; }
 
 infecho "Selftest complete!"

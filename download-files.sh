@@ -18,11 +18,11 @@ then
     if [ -z "$FEDORA_RAW_FILE" ]
     then
         echo "Searching for latest Fedora Rawhide..."
-        FEDORA_RAW_VER=$(wget -q $FEDORA_RAW_SOURCE -O - | grep -Po '(?<=Fedora-Minimal-Rawhide-).*?(?=.aarch64)' | head -n 1)
+        FEDORA_RAW_VER=$(wget -q $FEDORA_RAW_SOURCE -O - | grep -Po '(?<=Fedora-Minimal-).*?(?=.aarch64)' | head -n 1)
         if [ ! -z "$FEDORA_RAW_VER" ]
         then
             echo "Downloading latest Fedora version: $FEDORA_RAW_VER"
-            FEDORA_RAW_FILE=Fedora-Minimal-Rawhide-$FEDORA_RAW_VER.aarch64.raw.xz
+            FEDORA_RAW_FILE=Fedora-Minimal-$FEDORA_RAW_VER.aarch64.raw.xz
             echo ""
         else
             echo "Could not obtain latest version data"

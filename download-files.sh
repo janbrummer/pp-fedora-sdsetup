@@ -14,10 +14,6 @@ fi
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    # Download kernel
-    wget https://xff.cz/kernels/5.16/pp.tar.gz -O pp.tar.gz
-    tar xf pp.tar.gz
-
     # Get latest rawhide from repo when not set in .env
     if [ -z "$FEDORA_RAW_FILE" ]
     then

@@ -42,11 +42,13 @@ then
 
     infecho "Mounting Fedora image..."
     losetup "${FED_IMAGE}" rawhide.raw
-    partprobe -s ${FED_IMAGE}
+    partx --add ${FED_IMAGE}
     mount ${FED_IMAGE}p3 imgfs
 
     infecho "Mounting SD Card rootfs..."
-    partprobe -s $PP_IMAGE
+    # TODO: This fails if run after 01-partition-drive.sh because partx has
+    # already been run.
+    # partx --add ${PP_IMAGE}
     sleep 1 # Sometimes it lags.
     mount $PP_PARTB rootfs
 

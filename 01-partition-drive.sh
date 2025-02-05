@@ -47,7 +47,7 @@ EOF
 
     infecho "Mounting the image to ${PP_IMAGE}..."
     losetup "${PP_IMAGE}" fedora.img
-    partprobe -s "${PP_IMAGE}"
+    partx --add "${PP_IMAGE}"
 
     infecho "Beginning filesystem creation..."
     infecho "If this fails, you might need to install mkfs.btrfs."

@@ -25,7 +25,6 @@ fi
 
 # Warning
 echo "=== WARNING WARNING WARNING ==="
-infecho "I didn't test this so it might also cause WWIII or something."
 infecho "I'm not responsible for anything that happens, you should read the script first."
 echo "=== WARNING WARNING WARNING ==="
 echo

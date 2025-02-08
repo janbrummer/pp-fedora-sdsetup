@@ -41,7 +41,7 @@ then
     mkdir -p rootfs
 
     infecho "Mounting Fedora image..."
-    losetup "${FED_IMAGE}" rawhide.raw
+    losetup "${FED_IMAGE}" fedora.raw
     partx --add ${FED_IMAGE}
     mount ${FED_IMAGE}p3 imgfs
 

@@ -14,8 +14,7 @@ errecho () {
     exit 1
 }
 
-infecho "This adds my COPR repository (njha/mobile) and installs phone related packages."
-infecho "Only functional on Fedora Rawhide."
+infecho "This adds the njha/mobile COPR repository and installs phone related packages."
 infecho "HEAVY WIP, untested"
 
 infecho "Link temp-resolv.conf"

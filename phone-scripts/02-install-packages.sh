@@ -28,12 +28,11 @@ infecho "THIS WILL FAIL, DON'T WORRY ITS PROBABLY OK"
 dnf -q -y remove kernel || rpm -e --noscripts kernel-core
 dnf -q -y install linux-firmware
 
-# Firefox is currently causing problems with Cisco H.264 RPMs
 infecho "Installing recommended packages..."
 dnf -q -y install megi-kernel feedbackd phoc phosh squeekboard gnome-shell ModemManager rtl8723cs-firmware \
     dbus-x11 chatty calls carbons purple-mm-sms pinephone-helpers evolution-data-server \
     f35-backgrounds-gnome epiphany gnome-contacts NetworkManager-wwan \
-    firefox nautilus gvfs-goa megapixels gnome-power-manager gnome-usage xdg-user-dirs pipewire-alsa \
+    nautilus gvfs-goa megapixels gnome-power-manager gnome-usage xdg-user-dirs pipewire-alsa \
     pipewire-pulseaudio pp-uboot wlr-randr gnome-terminal gnome-clocks wireplumber
 
 infecho "Enabling graphical boot and Phosh..."

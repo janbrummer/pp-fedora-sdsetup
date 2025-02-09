@@ -15,7 +15,6 @@ errecho () {
 }
 
 infecho "This adds the njha/mobile COPR repository and installs phone related packages."
-infecho "HEAVY WIP, untested"
 
 infecho "Link temp-resolv.conf"
 ln -sfv /etc/tmp-resolv.conf /etc/resolv.conf

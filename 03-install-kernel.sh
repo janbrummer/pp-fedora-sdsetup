@@ -29,7 +29,6 @@ fi
 echo "=== WARNING WARNING WARNING ==="
 infecho "This script USES THE DD COMMAND AS ROOT. If the env vars are wrong, this could do something bad."
 infecho "Make sure this script is run from the main dir of the repo, since it assumes that's true."
-infecho "Also, I didn't test this so it might also cause WWIII or something."
 infecho "I'm not responsible for anything that happens, you should read the script first."
 echo "=== WARNING WARNING WARNING ==="
 echo

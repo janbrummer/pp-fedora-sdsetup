@@ -23,7 +23,7 @@ infecho "Enabling COPR repository..."
 dnf -q -y copr enable njha/mobile
 
 infecho "Removing old kernel..."
-infecho "THIS WILL FAIL, DON'T WORRY ITS PROBABLY OK"
+infecho "THIS MIGHT FAIL, DON'T WORRY ITS PROBABLY OK"
 dnf -q -y remove kernel || rpm -e --noscripts kernel-core
 dnf -q -y install linux-firmware
 

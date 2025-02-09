@@ -68,7 +68,9 @@ then
     umount $PP_PARTB
 
     infecho "Deleting temp directories..."
-    rmdir -p imgfs rootfs/boot
+    rmdir imgfs
+    [ -d rootfs/boot ] && rmdir rootfs/boot
+    rmdir rootfs
 fi
 
 infecho "If there are no errors above, the script was probably successful!"
